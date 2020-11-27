@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advocate-Client app</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="advocate_room.css">
+  <script src="advocate_room.js"></script>
+</head>
+<body>
+    <center>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+        <h1 class="header" style="font-variant: small-caps">	
+			Advocate-Client app
+			<sup>
+				<img src="m2.png">
+			</sup>
+        </h1>
+        <h3 id="user_name" class="color_white"></h3>
+        <div class="form-group input_div">
+			<label>Add Case:</label>
+             <input type="text" class="form-control" id="case_name" placeholder="Case Name">
+        </div>
+        <button class="btn btn-success" onclick="addCase()">Add Case</button>
+		<h3 class="color_white">Your Cases</h3>
+	    <div id="output"></div>
+    </center>
+</body>
+
+</html>

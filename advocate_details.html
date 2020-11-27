@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advocate-Client app</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="advocate_details.css">
+
+</head>
+<body>
+    <center>
+        <h1 class="header" style="font-variant: small-caps">	
+			Advocate-Client app
+			<sup>
+				<img src="m2.png">
+			</sup>
+        </h1>
+        <h3>
+            Welcome Advocate!!
+        </h3>
+        <h5>Kindly fill the details</h5>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 details_div">
+         <p><span class="glyphicon glyphicon-user"></span>Username :</p>
+         <input id="username" class="form-control" placeholder="Username">
+         <br>
+         <p> Office Address :</p>
+         <input id="address_input" class="form-control" placeholder="Address">
+         <br>
+         <p>Your Description :</p>
+         <input id="description_input" class="form-control" placeholder="Your Description">
+         <br>
+         <button class="btn btn-primary form-control glyphicon glyphicon-log-in" onclick="login()">Login</button>
+         <br>
+        </div>
+    </center>
+    <script src="advocate_details.js"></script>
+</body>
+</html>
